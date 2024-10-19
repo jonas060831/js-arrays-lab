@@ -64,8 +64,24 @@ Complete Exercise 5 in the space below:
 foods.splice(2, 0, 'tofu') 
 //first parameter is the position you want to insert it to 
 //second parameter is how many value you want to delete to the right of your
-//newly inserted value
+//newly inserted value 0 will keep the old value in the array
 // third element is the value you want to add
 
 
 console.log('Exercise 5 result:', foods);
+
+/*
+Exercise 6: Replace elements
+
+1) Replace 'pizza' in the `foods` array with 'sushi' and 'cupcake'.
+
+Complete Exercise 6 in the space below:
+*/
+
+foods.splice(1, 1, 'sushi', 'cupcake')
+//first parameter is the position you want to insert it to 
+//second parameter is how many value you want to delete to the right of your
+//newly inserted value 0 will keep the old value in the array
+// third element is the value you want to add
+
+console.log('Exercise 6 result:', foods);
