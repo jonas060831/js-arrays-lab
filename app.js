@@ -51,3 +51,21 @@ Complete Exercise 4 in the space below:
 let favFood = foods[1]
 
 console.log('Exercise 4 result:', favFood);
+
+/*
+Exercise 5: Insert an element between two others
+
+1) Insert the string 'tofu' between 'pizza' and 'cheeseburger' in the array.
+
+Complete Exercise 5 in the space below:
+*/
+
+
+foods.splice(2, 0, 'tofu') 
+//first parameter is the position you want to insert it to 
+//second parameter is how many value you want to delete to the right of your
+//newly inserted value
+// third element is the value you want to add
+
+
+console.log('Exercise 5 result:', foods);
