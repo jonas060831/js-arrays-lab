@@ -85,3 +85,23 @@ foods.splice(1, 1, 'sushi', 'cupcake')
 // third element is the value you want to add
 
 console.log('Exercise 6 result:', foods);
+
+/*
+Exercise 7: Using the `slice()` method
+
+1) Use the `slice()` method to create a new array that contains 'sushi' and 
+   'cupcake'.
+
+2) Assign it to a variable named `yummy`.
+
+Complete Exercise 7 in the space below:
+*/
+
+let yummy = foods.slice(1, 3)
+//first parameter is the index of the value you want to add
+//if you did not provide a second parameter it will add all the values
+//of the previous array minus the one you are replacing
+//second parameter is the index it will stop and not include that index
+//to the newly created array
+
+console.log('Exercise 7 result:', yummy);
