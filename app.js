@@ -208,7 +208,6 @@ Exercise 12: FizzBuzz with arrays
 Complete Exercise 12 in the space below:
 */
 
-console.log(nums)
 const fizz = []
 const buzz = []
 const fizzbuzz = []
@@ -234,7 +233,6 @@ nums.forEach (num => {
     //3
     if(condition3) fizz.push(num)
 
-        
     //5
     if(condition5) buzz.push(num)
 
@@ -249,3 +247,42 @@ console.log('  fizz:', fizz);
 console.log('  buzz:', buzz);
 console.log('  fizzbuzz:', fizzbuzz);
 
+/*
+Exercise 13: Retrieve the Last Array
+
+1) Assign the last nested array in the `numArrays` below to a variable named
+   `numList`. As you do this, also fulfill these goals:
+
+   - Assume you don't know how many nested arrays `numArrays` contains.
+   - Do not alter the original `numArrays` array.
+
+Complete Exercise 13 in the space below:
+*/
+
+const numArrays = [
+	[100, 5, 23],
+	[15, 21, 72, 9],
+	[45, 66],
+	[7, 81, 90]
+];
+
+//simply just get the last row in numArrays?
+const numList = numArrays.at(numArrays.length -1)
+
+//should we also access the elements blindly? if so then
+// let  numList2 = []
+
+// for (let index = 0; index < numArrays.length; index++) {
+//     const rows = numArrays[index]
+
+//     for (let index2 = 0; index2 < rows.length; index2++) {
+//         const element = rows[index2]
+
+//         if(index === numArrays.length - 1) {
+//             //this is the last index of numArrays row
+//             numList2.push(element)
+//         }   
+//     }
+// }
+
+console.log('Exercise 13 result:', numList);
