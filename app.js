@@ -213,6 +213,36 @@ const fizz = []
 const buzz = []
 const fizzbuzz = []
 
+const determineDivisibility = (divisor, modulo) => {
+    let isDivisible;
+
+    //if the result is 0 then it is divisible by that modulo
+    //and the result is 0 which is false so then reverse that by !
+    // to make it 1 which is true
+    !(divisor % modulo) ? isDivisible = true : ''
+
+    return isDivisible
+}
+
+nums.forEach (num => {
+
+
+    //first parameter is the number to test second is the modulo to determine if it will result to 0
+    //determineDivisibility(x,y) 
+    const condition3 = determineDivisibility(num, 3) 
+    const condition5 =  determineDivisibility(num, 5)
+    //3
+    if(condition3) fizz.push(num)
+
+        
+    //5
+    if(condition5) buzz.push(num)
+
+    //3 and 5
+    if(condition3 && condition5) fizzbuzz.push(num)
+
+})
+
 
 console.log('Exercise 12 Results:');
 console.log('  fizz:', fizz);
