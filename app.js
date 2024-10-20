@@ -225,7 +225,6 @@ const determineDivisibility = (divisor, modulo) => {
 
 nums.forEach (num => {
 
-
     //first parameter is the number to test second is the modulo to determine if it will result to 0
     //determineDivisibility(x,y) 
     const condition3 = determineDivisibility(num, 3) 
@@ -310,3 +309,26 @@ for (const rows of numArrays) {
 }
 
 console.log('Exercise 14 result:', num);
+
+
+/*
+Exercise 15: Nested array sum
+
+1) Use nested loops or `forEach()` methods to sum up all numbers within 
+   `numArrays` nested arrays.
+   
+2) Assign the sum to a variable called `total`.
+
+Hint: Be sure to declare and initialize the total variable before the iterations.
+
+Complete Exercise 15 in the space below:
+*/
+
+let total = 0;
+
+//flatten the array first then add each element to total
+numArrays.flat().forEach( element => {
+    total += element
+})
+
+console.log('Exercise 15 result:\n', total);
